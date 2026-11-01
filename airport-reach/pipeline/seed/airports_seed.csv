@@ -1,0 +1,127 @@
+ident,type,name,latitude_deg,longitude_deg,iso_country,municipality,scheduled_service,iata_code
+KATL,large_airport,Hartsfield-Jackson Atlanta International Airport,33.6367,-84.4281,US,Atlanta,yes,ATL
+KLAX,large_airport,Los Angeles International Airport,33.9425,-118.4081,US,Los Angeles,yes,LAX
+KORD,large_airport,Chicago O'Hare International Airport,41.9786,-87.9048,US,Chicago,yes,ORD
+KDFW,large_airport,Dallas/Fort Worth International Airport,32.8998,-97.0403,US,Dallas,yes,DFW
+KDEN,large_airport,Denver International Airport,39.8617,-104.6732,US,Denver,yes,DEN
+KJFK,large_airport,John F. Kennedy International Airport,40.6398,-73.7789,US,New York,yes,JFK
+KSFO,large_airport,San Francisco International Airport,37.6189,-122.3750,US,San Francisco,yes,SFO
+KSEA,large_airport,Seattle-Tacoma International Airport,47.4502,-122.3088,US,Seattle,yes,SEA
+KMIA,large_airport,Miami International Airport,25.7959,-80.2870,US,Miami,yes,MIA
+PANC,large_airport,Ted Stevens Anchorage International Airport,61.1743,-149.9983,US,Anchorage,yes,ANC
+PHNL,large_airport,Daniel K. Inouye International Airport,21.3187,-157.9225,US,Honolulu,yes,HNL
+CYYZ,large_airport,Toronto Pearson International Airport,43.6777,-79.6248,CA,Toronto,yes,YYZ
+CYVR,large_airport,Vancouver International Airport,49.1947,-123.1792,CA,Vancouver,yes,YVR
+MMMX,large_airport,Mexico City International Airport,19.4363,-99.0721,MX,Mexico City,yes,MEX
+SKBO,large_airport,El Dorado International Airport,4.7016,-74.1469,CO,Bogotá,yes,BOG
+SPJC,large_airport,Jorge Chávez International Airport,-12.0219,-77.1143,PE,Lima,yes,LIM
+SCEL,large_airport,Arturo Merino Benítez International Airport,-33.3930,-70.7858,CL,Santiago,yes,SCL
+SAEZ,large_airport,Ministro Pistarini International Airport,-34.8222,-58.5358,AR,Buenos Aires,yes,EZE
+SBGR,large_airport,São Paulo/Guarulhos International Airport,-23.4356,-46.4731,BR,São Paulo,yes,GRU
+SBGL,large_airport,Rio de Janeiro/Galeão International Airport,-22.8100,-43.2506,BR,Rio de Janeiro,yes,GIG
+EGLL,large_airport,London Heathrow Airport,51.4700,-0.4543,GB,London,yes,LHR
+LFPG,large_airport,Paris Charles de Gaulle Airport,49.0097,2.5479,FR,Paris,yes,CDG
+EHAM,large_airport,Amsterdam Airport Schiphol,52.3105,4.7683,NL,Amsterdam,yes,AMS
+EDDF,large_airport,Frankfurt Airport,50.0379,8.5622,DE,Frankfurt,yes,FRA
+EDDM,large_airport,Munich Airport,48.3538,11.7861,DE,Munich,yes,MUC
+EDDB,large_airport,Berlin Brandenburg Airport,52.3667,13.5033,DE,Berlin,yes,BER
+LEMD,large_airport,Madrid Barajas Airport,40.4983,-3.5676,ES,Madrid,yes,MAD
+LEBL,large_airport,Barcelona El Prat Airport,41.2971,2.0785,ES,Barcelona,yes,BCN
+LIRF,large_airport,Rome Fiumicino Airport,41.8003,12.2389,IT,Rome,yes,FCO
+LIMC,large_airport,Milan Malpensa Airport,45.6306,8.7281,IT,Milan,yes,MXP
+LPPT,large_airport,Lisbon Humberto Delgado Airport,38.7742,-9.1342,PT,Lisbon,yes,LIS
+LGAV,large_airport,Athens Eleftherios Venizelos Airport,37.9364,23.9445,GR,Athens,yes,ATH
+LOWW,large_airport,Vienna International Airport,48.1103,16.5697,AT,Vienna,yes,VIE
+EPWA,large_airport,Warsaw Chopin Airport,52.1657,20.9671,PL,Warsaw,yes,WAW
+ESSA,large_airport,Stockholm Arlanda Airport,59.6519,17.9186,SE,Stockholm,yes,ARN
+BIKF,medium_airport,Keflavik International Airport,63.9850,-22.6056,IS,Reykjavik,yes,KEF
+UKBB,large_airport,Boryspil International Airport,50.3450,30.8947,UA,Kyiv,yes,KBP
+ULLI,large_airport,Pulkovo Airport,59.8003,30.2625,RU,Saint Petersburg,yes,LED
+UUEE,large_airport,Sheremetyevo International Airport,55.9726,37.4146,RU,Moscow,yes,SVO
+LTFM,large_airport,Istanbul Airport,41.2753,28.7519,TR,Istanbul,yes,IST
+LTAC,large_airport,Ankara Esenboga Airport,40.1281,32.9951,TR,Ankara,yes,ESB
+HECA,large_airport,Cairo International Airport,30.1219,31.4056,EG,Cairo,yes,CAI
+GMMN,large_airport,Mohammed V International Airport,33.3675,-7.5899,MA,Casablanca,yes,CMN
+DNMM,large_airport,Murtala Muhammed International Airport,6.5774,3.3212,NG,Lagos,yes,LOS
+DGAA,large_airport,Kotoka International Airport,5.6052,-0.1668,GH,Accra,yes,ACC
+DIAP,large_airport,Felix-Houphouet-Boigny International Airport,5.2614,-3.9263,CI,Abidjan,yes,ABJ
+FZAA,large_airport,N'djili International Airport,-4.3858,15.4446,CD,Kinshasa,yes,FIH
+FNLU,large_airport,Quatro de Fevereiro International Airport,-8.8584,13.2312,AO,Luanda,yes,LAD
+HSSS,large_airport,Khartoum International Airport,15.5895,32.5532,SD,Khartoum,yes,KRT
+HAAB,large_airport,Addis Ababa Bole International Airport,8.9779,38.7993,ET,Addis Ababa,yes,ADD
+HKJK,large_airport,Jomo Kenyatta International Airport,-1.3192,36.9278,KE,Nairobi,yes,NBO
+HTDA,large_airport,Julius Nyerere International Airport,-6.8781,39.2026,TZ,Dar es Salaam,yes,DAR
+FAOR,large_airport,O. R. Tambo International Airport,-26.1392,28.2460,ZA,Johannesburg,yes,JNB
+FACT,large_airport,Cape Town International Airport,-33.9715,18.6021,ZA,Cape Town,yes,CPT
+OMDB,large_airport,Dubai International Airport,25.2532,55.3657,AE,Dubai,yes,DXB
+OTHH,large_airport,Hamad International Airport,25.2731,51.6081,QA,Doha,yes,DOH
+OERK,large_airport,King Khalid International Airport,24.9576,46.6988,SA,Riyadh,yes,RUH
+LLBG,large_airport,Ben Gurion Airport,32.0114,34.8867,IL,Tel Aviv,yes,TLV
+OIIE,large_airport,Imam Khomeini International Airport,35.4161,51.1522,IR,Tehran,yes,IKA
+ORBI,large_airport,Baghdad International Airport,33.2625,44.2346,IQ,Baghdad,yes,BGW
+OAKB,medium_airport,Kabul International Airport,34.5659,69.2123,AF,Kabul,yes,KBL
+VIDP,large_airport,Indira Gandhi International Airport,28.5562,77.1000,IN,New Delhi,yes,DEL
+VABB,large_airport,Chhatrapati Shivaji Maharaj International Airport,19.0896,72.8656,IN,Mumbai,yes,BOM
+VOBL,large_airport,Kempegowda International Airport,13.1986,77.7066,IN,Bengaluru,yes,BLR
+VOMM,large_airport,Chennai International Airport,12.9941,80.1709,IN,Chennai,yes,MAA
+VOHS,large_airport,Rajiv Gandhi International Airport,17.2403,78.4294,IN,Hyderabad,yes,HYD
+VECC,large_airport,Netaji Subhas Chandra Bose International Airport,22.6547,88.4467,IN,Kolkata,yes,CCU
+VAAH,large_airport,Sardar Vallabhbhai Patel International Airport,23.0772,72.6347,IN,Ahmedabad,yes,AMD
+VAPO,large_airport,Pune Airport,18.5821,73.9197,IN,Pune,yes,PNQ
+VIJP,large_airport,Jaipur International Airport,26.8242,75.8122,IN,Jaipur,yes,JAI
+VILK,large_airport,Chaudhary Charan Singh International Airport,26.7606,80.8893,IN,Lucknow,yes,LKO
+VANP,large_airport,Dr. Babasaheb Ambedkar International Airport,21.0922,79.0472,IN,Nagpur,yes,NAG
+VEPT,large_airport,Jay Prakash Narayan International Airport,25.5913,85.0880,IN,Patna,yes,PAT
+VEGT,large_airport,Lokpriya Gopinath Bordoloi International Airport,26.1061,91.5859,IN,Guwahati,yes,GAU
+VABP,large_airport,Raja Bhoj International Airport,23.2875,77.3374,IN,Bhopal,yes,BHO
+OPKC,large_airport,Jinnah International Airport,24.9065,67.1608,PK,Karachi,yes,KHI
+OPLA,large_airport,Allama Iqbal International Airport,31.5216,74.4036,PK,Lahore,yes,LHE
+VGHS,large_airport,Hazrat Shahjalal International Airport,23.8433,90.3978,BD,Dhaka,yes,DAC
+VCBI,large_airport,Bandaranaike International Airport,7.1808,79.8841,LK,Colombo,yes,CMB
+VNKT,large_airport,Tribhuvan International Airport,27.6966,85.3591,NP,Kathmandu,yes,KTM
+UTTT,large_airport,Tashkent International Airport,41.2579,69.2812,UZ,Tashkent,yes,TAS
+UAAA,large_airport,Almaty International Airport,43.3521,77.0405,KZ,Almaty,yes,ALA
+ZMCK,medium_airport,Chinggis Khaan International Airport,47.8431,106.7664,MN,Ulaanbaatar,yes,ULN
+ZBAA,large_airport,Beijing Capital International Airport,40.0801,116.5846,CN,Beijing,yes,PEK
+ZSPD,large_airport,Shanghai Pudong International Airport,31.1443,121.8083,CN,Shanghai,yes,PVG
+ZGGG,large_airport,Guangzhou Baiyun International Airport,23.3924,113.2988,CN,Guangzhou,yes,CAN
+ZGSZ,large_airport,Shenzhen Bao'an International Airport,22.6393,113.8107,CN,Shenzhen,yes,SZX
+ZUUU,large_airport,Chengdu Shuangliu International Airport,30.5785,103.9471,CN,Chengdu,yes,CTU
+ZUCK,large_airport,Chongqing Jiangbei International Airport,29.7192,106.6417,CN,Chongqing,yes,CKG
+ZHHH,large_airport,Wuhan Tianhe International Airport,30.7838,114.2081,CN,Wuhan,yes,WUH
+ZLXY,large_airport,Xi'an Xianyang International Airport,34.4471,108.7516,CN,Xi'an,yes,XIY
+ZWWW,large_airport,Urumqi Diwopu International Airport,43.9071,87.4742,CN,Urumqi,yes,URC
+ZULS,medium_airport,Lhasa Gonggar Airport,29.2978,90.9119,CN,Lhasa,yes,LXA
+ZYHB,large_airport,Harbin Taiping International Airport,45.6234,126.2503,CN,Harbin,yes,HRB
+ZPPP,large_airport,Kunming Changshui International Airport,25.1019,102.9292,CN,Kunming,yes,KMG
+VHHH,large_airport,Hong Kong International Airport,22.3080,113.9185,HK,Hong Kong,yes,HKG
+RCTP,large_airport,Taiwan Taoyuan International Airport,25.0777,121.2328,TW,Taipei,yes,TPE
+RKSI,large_airport,Incheon International Airport,37.4602,126.4407,KR,Seoul,yes,ICN
+RKPK,large_airport,Gimhae International Airport,35.1795,128.9382,KR,Busan,yes,PUS
+RJAA,large_airport,Narita International Airport,35.7720,140.3929,JP,Tokyo,yes,NRT
+RJTT,large_airport,Tokyo Haneda Airport,35.5494,139.7798,JP,Tokyo,yes,HND
+RJBB,large_airport,Kansai International Airport,34.4347,135.2441,JP,Osaka,yes,KIX
+RJGG,large_airport,Chubu Centrair International Airport,34.8584,136.8054,JP,Nagoya,yes,NGO
+RJCC,large_airport,New Chitose Airport,42.7752,141.6923,JP,Sapporo,yes,CTS
+RJFF,large_airport,Fukuoka Airport,33.5859,130.4510,JP,Fukuoka,yes,FUK
+WSSS,large_airport,Singapore Changi Airport,1.3644,103.9915,SG,Singapore,yes,SIN
+VTBS,large_airport,Suvarnabhumi Airport,13.6900,100.7501,TH,Bangkok,yes,BKK
+WMKK,large_airport,Kuala Lumpur International Airport,2.7456,101.7099,MY,Kuala Lumpur,yes,KUL
+WIII,large_airport,Soekarno-Hatta International Airport,-6.1256,106.6559,ID,Jakarta,yes,CGK
+WARR,large_airport,Juanda International Airport,-7.3798,112.7869,ID,Surabaya,yes,SUB
+RPLL,large_airport,Ninoy Aquino International Airport,14.5086,121.0198,PH,Manila,yes,MNL
+VVTS,large_airport,Tan Son Nhat International Airport,10.8188,106.6520,VN,Ho Chi Minh City,yes,SGN
+VVNB,large_airport,Noi Bai International Airport,21.2212,105.8072,VN,Hanoi,yes,HAN
+VDPP,large_airport,Phnom Penh International Airport,11.5466,104.8441,KH,Phnom Penh,yes,PNH
+VYYY,large_airport,Yangon International Airport,16.9073,96.1332,MM,Yangon,yes,RGN
+UNNT,large_airport,Tolmachevo Airport,55.0126,82.6507,RU,Novosibirsk,yes,OVB
+UNKL,medium_airport,Krasnoyarsk Yemelyanovo Airport,56.1729,92.4933,RU,Krasnoyarsk,yes,KJA
+USSS,medium_airport,Koltsovo Airport,56.7431,60.8027,RU,Yekaterinburg,yes,SVX
+UIII,medium_airport,Irkutsk International Airport,52.2680,104.3889,RU,Irkutsk,yes,IKT
+UHWW,medium_airport,Vladivostok International Airport,43.3990,132.1480,RU,Vladivostok,yes,VVO
+UEEE,medium_airport,Yakutsk Airport,62.0933,129.7707,RU,Yakutsk,yes,YKS
+YSSY,large_airport,Sydney Kingsford Smith Airport,-33.9399,151.1753,AU,Sydney,yes,SYD
+YMML,large_airport,Melbourne Airport,-37.6690,144.8410,AU,Melbourne,yes,MEL
+YPPH,large_airport,Perth Airport,-31.9403,115.9672,AU,Perth,yes,PER
+YBBN,large_airport,Brisbane Airport,-27.3842,153.1175,AU,Brisbane,yes,BNE
+NZAA,large_airport,Auckland Airport,-37.0082,174.7850,NZ,Auckland,yes,AKL

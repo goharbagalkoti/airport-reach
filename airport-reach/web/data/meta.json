@@ -1,0 +1,127 @@
+{
+  "label": "seed",
+  "generated_at": "2026-11-01T13:41:16+00:00",
+  "sources": {
+    "airports": "C:\\Users\\gauha\\OneDrive\\Desktop\\airport\\airport-reach\\pipeline\\seed\\airports_seed.csv",
+    "cities": "C:\\Users\\gauha\\OneDrive\\Desktop\\airport\\airport-reach\\pipeline\\seed\\cities_seed.csv"
+  },
+  "attribution": "Airports: OurAirports (public domain). Cities: GeoNames (CC BY 4.0).",
+  "filters": {
+    "airport_types": "large_airport",
+    "scheduled_only": true,
+    "min_city_pop": 100000
+  },
+  "counts": {
+    "cities": 126,
+    "airports": 117,
+    "population": 649630000
+  },
+  "bands_km": [
+    50,
+    100,
+    250,
+    500
+  ],
+  "beyond": {
+    "50": {
+      "cities": 10,
+      "pop": 15380000,
+      "pop_share": 0.0237
+    },
+    "100": {
+      "cities": 10,
+      "pop": 15380000,
+      "pop_share": 0.0237
+    },
+    "250": {
+      "cities": 10,
+      "pop": 15380000,
+      "pop_share": 0.0237
+    },
+    "500": {
+      "cities": 8,
+      "pop": 10480000,
+      "pop_share": 0.0161
+    }
+  },
+  "median_dist_km": 17.7,
+  "pop_beyond_250km_by_country": {
+    "CN": 4900000,
+    "AF": 4600000,
+    "RU": 4150000,
+    "MN": 1600000,
+    "IS": 130000
+  },
+  "farthest": [
+    {
+      "name": "Reykjavik",
+      "cc": "IS",
+      "dist_km": 1880.9,
+      "nearest": "LHR",
+      "pop": 130000
+    },
+    {
+      "name": "Yakutsk",
+      "cc": "RU",
+      "dist_km": 1837.9,
+      "nearest": "HRB",
+      "pop": 330000
+    },
+    {
+      "name": "Irkutsk",
+      "cc": "RU",
+      "dist_km": 1452.3,
+      "nearest": "OVB",
+      "pop": 620000
+    },
+    {
+      "name": "Yekaterinburg",
+      "cc": "RU",
+      "dist_km": 1379.4,
+      "nearest": "OVB",
+      "pop": 1500000
+    },
+    {
+      "name": "Ulaanbaatar",
+      "cc": "MN",
+      "dist_km": 1161.5,
+      "nearest": "PEK",
+      "pop": 1600000
+    },
+    {
+      "name": "Krasnoyarsk",
+      "cc": "RU",
+      "dist_km": 651.1,
+      "nearest": "OVB",
+      "pop": 1100000
+    },
+    {
+      "name": "Kabul",
+      "cc": "AF",
+      "dist_km": 591.4,
+      "nearest": "LHE",
+      "pop": 4600000
+    },
+    {
+      "name": "Vladivostok",
+      "cc": "RU",
+      "dist_km": 527.5,
+      "nearest": "HRB",
+      "pop": 600000
+    },
+    {
+      "name": "Lanzhou",
+      "cc": "CN",
+      "dist_km": 481.5,
+      "nearest": "XIY",
+      "pop": 4000000
+    },
+    {
+      "name": "Lhasa",
+      "cc": "CN",
+      "dist_km": 396.7,
+      "nearest": "GAU",
+      "pop": 900000
+    }
+  ]
+}

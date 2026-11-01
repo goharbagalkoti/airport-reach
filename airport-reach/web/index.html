@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Airport Reach</title>
+  <meta name="description" content="How far is the nearest large airport? Explore every city's distance to its closest hub on an interactive map.">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <aside id="panel">
+      <header>
+        <h1>Airport Reach</h1>
+        <p class="sub">How far is the nearest large airport from the places people live?</p>
+      </header>
+
+      <div id="banner" class="banner" hidden></div>
+
+      <div class="search">
+        <input id="q" type="search" placeholder="Search a city, airport code or address" autocomplete="off" aria-label="Search">
+        <ul id="results" hidden></ul>
+      </div>
+
+      <section class="kpis" aria-live="polite">
+        <div><b id="k-count">–</b><span>cities shown</span></div>
+        <div><b id="k-pop">–</b><span>people</span></div>
+        <div><b id="k-median">–</b><span>median distance</span></div>
+        <div><b id="k-max">–</b><span>farthest</span></div>
+      </section>
+
+      <section class="filters">
+        <label>Farther than <output id="distVal">0 km</output>
+          <input id="dist" type="range" min="0" max="1000" step="10" value="0">
+        </label>
+        <div class="row">
+          <label>City size
+            <select id="pop">
+              <option value="0">All</option>
+              <option value="100000">100 k +</option>
+              <option value="500000">500 k +</option>
+              <option value="1000000">1 M +</option>
+              <option value="5000000">5 M +</option>
+            </select>
+          </label>
+          <label>Country
+            <select id="country"><option value="">All</option></select>
+          </label>
+        </div>
+        <label id="basemapRow">Basemap
+          <select id="basemap"><option value="plain">Plain</option><option value="osm">OpenStreetMap</option></select>
+        </label>
+      </section>
+
+      <section class="legend" id="legend" aria-label="Distance to nearest large airport"></section>
+
+      <section id="detail" class="detail">
+        <p class="hint">Click a city, an airport, or any empty spot on the map. Airports show who they serve; cities and pins show the way to the nearest airport.</p>
+      </section>
+
+      <section>
+        <h2>Farthest from a large airport</h2>
+        <ol id="remote" class="remote"></ol>
+      </section>
+
+      <footer id="foot"></footer>
+    </aside>
+    <main id="map" role="application" aria-label="Map of cities and airports"></main>
+  </div>
+
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="config.js"></script>
+  <script src="geo.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

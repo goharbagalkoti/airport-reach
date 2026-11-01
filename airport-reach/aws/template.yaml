@@ -1,0 +1,113 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: >
+  Airport Reach. Private S3 bucket behind CloudFront (origin access control) for the static map app,
+  plus an Amazon Location Service API key restricted to the three APIs the app calls
+  (maps, places search, routes) and to this site's origin.
+
+Parameters:
+  AppName:
+    Type: String
+    Default: airport-reach
+    AllowedPattern: '^[a-z0-9-]{3,30}$'
+    Description: Prefix for resource names.
+  LocalDevReferer:
+    Type: String
+    Default: 'http://localhost:8080/*'
+    Description: Extra referer allowed to use the API key, for local testing. Set to the CloudFront pattern again to disable.
+
+Resources:
+  SiteBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+  SiteOAC:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      OriginAccessControlConfig:
+        Name: !Sub '${AppName}-${AWS::StackName}-oac'
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
+
+  Distribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Enabled: true
+        Comment: !Sub '${AppName} map app'
+        DefaultRootObject: index.html
+        HttpVersion: http2and3
+        PriceClass: PriceClass_100
+        Origins:
+          - Id: site
+            DomainName: !GetAtt SiteBucket.RegionalDomainName
+            OriginAccessControlId: !GetAtt SiteOAC.Id
+            S3OriginConfig:
+              OriginAccessIdentity: ''
+        DefaultCacheBehavior:
+          TargetOriginId: site
+          ViewerProtocolPolicy: redirect-to-https
+          AllowedMethods: [GET, HEAD]
+          Compress: true
+          CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6 # Managed-CachingOptimized
+
+  BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref SiteBucket
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: AllowCloudFrontRead
+            Effect: Allow
+            Principal:
+              Service: cloudfront.amazonaws.com
+            Action: s3:GetObject
+            Resource: !Sub '${SiteBucket.Arn}/*'
+            Condition:
+              StringEquals:
+                'AWS:SourceArn': !Sub 'arn:${AWS::Partition}:cloudfront::${AWS::AccountId}:distribution/${Distribution}'
+
+  MapApiKey:
+    Type: AWS::Location::APIKey
+    Properties:
+      KeyName: !Sub '${AppName}-${AWS::StackName}'
+      Description: Browser key for the Airport Reach map (maps, place search, routes)
+      NoExpiry: true
+      Restrictions:
+        AllowActions:
+          - geo-maps:GetTile
+          - geo-maps:GetStaticMap
+          - geo-maps:GetSprites
+          - geo-maps:GetGlyphs
+          - geo-places:SearchText
+          - geo-places:Autocomplete
+          - geo-places:GetPlace
+          - geo-routes:CalculateRoutes
+        AllowResources:
+          - !Sub 'arn:${AWS::Partition}:geo-maps:${AWS::Region}::provider/default'
+          - !Sub 'arn:${AWS::Partition}:geo-places:${AWS::Region}::provider/default'
+          - !Sub 'arn:${AWS::Partition}:geo-routes:${AWS::Region}::provider/default'
+        AllowReferers:
+          - !Sub 'https://${Distribution.DomainName}/*'
+          - !Ref LocalDevReferer
+
+Outputs:
+  SiteUrl:
+    Value: !Sub 'https://${Distribution.DomainName}'
+  BucketName:
+    Value: !Ref SiteBucket
+  DistributionId:
+    Value: !Ref Distribution
+  KeyName:
+    Value: !Ref MapApiKey
+    Description: Fetch the key value with `aws location describe-key --key-name <this>`.

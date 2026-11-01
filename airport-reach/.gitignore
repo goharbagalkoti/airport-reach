@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.DS_Store
+# a config.js with a real key should not be committed; deploy.sh writes its own copy
+web/config.local.js
